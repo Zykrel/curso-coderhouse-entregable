@@ -1,0 +1,300 @@
+html body {
+    margin: 0 auto;
+} 
+
+body{
+    background-color: #fac4c4;
+}
+
+@media only screen and (max-width: 768px) {
+    .imgMain img {
+        width: 300px;
+    }
+
+    header {
+        display: grid;
+    }
+
+    ul {
+        display: none;
+    }
+
+    input:checked~ul {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid #989898;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        color: #989898;
+        margin: 20px 20px 0 0;
+    }
+
+    label:hover {
+        background: #d9d9d9;
+    }
+
+    input:checked~label {
+        background: #d9d9d9;
+    }
+
+    ul {
+        margin-top: 0;
+        padding: 0;
+        width: 200px;
+
+    }
+
+    li {
+        display: block;
+        background: #252525;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid grey;
+    }
+
+    .iframe{
+        grid-area: iframe;
+        position: relative;
+        overflow: hidden;
+        width: 400px;
+        height: 300px
+    
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .imgMain img {
+        width: 500px;
+    }
+    #menu, label{
+        display: none;
+    }
+
+
+    header,
+    footer,
+    ul {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px;
+        width: 150px;
+    }
+
+    li {
+        padding: 10px 1px;
+    }
+
+    .iframe{
+        grid-area: iframe;
+        position: relative;
+        overflow: hidden;
+        width: 500px;
+        height: 400px
+    
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    header,
+    footer,
+    ul {
+        display: flex;
+    }
+
+    nav a {
+        padding: 16px;
+        width: 150px;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    #menu, label{
+        display: none;
+    }
+
+    .iframe{
+        grid-area: iframe;
+        position: relative;
+        overflow: hidden;
+        width: 500px;
+        height: 400px
+    
+    }
+}
+
+nav li:hover {
+    background-color: #989898;
+}
+
+.gridIndex {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.gridMain {
+    display: grid;
+    grid-template-areas:
+        "encabezado"
+        "imgMain"
+        "txtMain";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.encabezado {
+    grid-area: encabezado;
+}
+
+.imgMain {
+    grid-area: imgMain;
+}
+
+.txtMain {
+    grid-area: txtMain;
+}
+
+.gridIndex footer {
+    justify-content: space-around;
+}
+
+
+.derecha {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pegadoAbajo {
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.centrar {
+    text-align: center;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.padT-20 {
+    padding-top: 20px;
+}
+
+
+.m-50 {
+    margin: 50px;
+}
+
+.bgPrimario {
+    background-color: #252525;
+}
+
+.bgSecundario {
+    background-color: #252525;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.logos {
+    display: inline;
+}
+
+.logos img {
+    height: 50px;
+    width: 50px;
+    padding: 12px;
+}
+
+.logo {
+    height: 5em;
+}
+
+
+.gridMainNosotros{
+    display: grid;
+    grid-template-areas:
+        "sobreNosotros"
+        "ubicacion"
+        "iframe";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+
+.sobreNosotros{
+    grid-area: sobreNosotros;
+    max-width: 100vw;
+}
+
+.ubicacion{
+    grid-area: ubicacion;
+}
+
+.modTamaño{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+table, tr, td, th{
+    border: solid 2px;
+    text-align: center;
+    width: 40%;
+}
+
