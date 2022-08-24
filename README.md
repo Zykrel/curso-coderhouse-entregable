@@ -1,3 +1,4 @@
 # curso-coderhouse-entregable
 
-Trabajo de Animaciones mas Primer repo
+Trabajo de Animaciones más Primer repo
+Nahuel Garcia
